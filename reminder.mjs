@@ -36,7 +36,7 @@ try {
     console.log('expireDate', expireDate, 'tomorrow', tomorrow, expireDate === tomorrow)
     // 如果到期日是明天，则准备续期
     if (expireDate === tomorrow) {
-        // TODO: 通过电子邮件、Slack 和 Discord 提醒即将到期的通知
+        // TODO: 通过电子邮件、Slack 和 Discord 提醒即将到期的通知的
         fetch('https://script.google.com/macros/s/AKfycbzbAcpAe_LGZsXpxjRl9aOV60q-XmuNC_bj62B5G45vR3vB13THNpoqiZr08AjMn_53Ug/exec?recipient=' + process.env.EMAIL)
     }
 } catch (e) {
